@@ -1,0 +1,34 @@
+{
+    "hooks": {
+        "SessionStart": [
+            {
+                "type": "command",
+                "command": ".github/hooks/session-logger/log-session-start.sh",
+                "windows": "powershell -ExecutionPolicy Bypass -File .github/hooks/session-logger/log-session-start.ps1",
+                "cwd": ".",
+                "timeout": 5
+            }
+        ],
+        "Stop": [
+            {
+                "type": "command",
+                "command": ".github/hooks/session-logger/log-session-end.sh",
+                "windows": "powershell -ExecutionPolicy Bypass -File .github/hooks/session-logger/log-session-end.ps1",
+                "cwd": ".",
+                "timeout": 5
+            }
+        ],
+        "UserPromptSubmit": [
+            {
+                "type": "command",
+                "command": ".github/hooks/session-logger/log-prompt.sh",
+                "windows": "powershell -ExecutionPolicy Bypass -File .github/hooks/session-logger/log-prompt.ps1",
+                "cwd": ".",
+                "env": {
+                    "LOG_LEVEL": "INFO"
+                },
+                "timeout": 5
+            }
+        ]
+    }
+}

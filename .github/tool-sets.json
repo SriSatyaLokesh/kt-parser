@@ -1,0 +1,38 @@
+{
+  "toolSets": [
+    {
+      "name": "read-only",
+      "description": "Read-only analysis tools for codebase exploration",
+      "tools": [
+        "codebase",
+        "search",
+        "usages",
+        "fetch",
+        "problems"
+      ]
+    },
+    {
+      "name": "full-dev",
+      "description": "Full development workflow with file editing and terminal access",
+      "tools": [
+        "editFiles",
+        "createFile",
+        "terminal",
+        "search",
+        "codebase",
+        "problems"
+      ]
+    },
+    {
+      "name": "review",
+      "description": "Code review and quality analysis tools",
+      "tools": [
+        "search",
+        "codebase",
+        "usages",
+        "problems",
+        "changes"
+      ]
+    }
+  ]
+}

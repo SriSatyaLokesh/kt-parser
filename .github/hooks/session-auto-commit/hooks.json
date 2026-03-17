@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": ".github/hooks/session-auto-commit/auto-commit.sh",
+        "windows": "powershell -ExecutionPolicy Bypass -File .github/hooks/session-auto-commit/auto-commit.ps1",
+        "cwd": ".",
+        "timeout": 30
+      }
+    ]
+  }
+}
