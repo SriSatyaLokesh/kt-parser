@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/kt_parser.egg-info/PKG-INFO
+src/kt_parser.egg-info/SOURCES.txt
+src/kt_parser.egg-info/dependency_links.txt
+src/kt_parser.egg-info/entry_points.txt
+src/kt_parser.egg-info/requires.txt
+src/kt_parser.egg-info/top_level.txt

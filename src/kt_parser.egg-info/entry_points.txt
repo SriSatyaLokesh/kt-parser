@@ -1,0 +1,2 @@
+[console_scripts]
+kt-parser = kt_parser.cli:main
